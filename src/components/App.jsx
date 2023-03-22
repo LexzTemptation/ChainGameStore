@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 export default function App()
 {
     return (
-    <Fragment>
+    <Fragment class="bdyLogin">
             <nav class="navbar navbar-expand-lg bg-danger">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Navbar</a>
