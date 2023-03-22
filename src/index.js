@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 //import ReactDOM from "react-dom";
 import './index.css';
-import App from './components/App';
-import Xd from "./components/Xd";
+import App from './App';
+import Login from "./components/Login";
 import CreateAccount from "./components/CreateAccount";
 //import { App } from './routes/App';
 //import reportWebVitals from './reportWebVitals';
@@ -16,10 +16,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Xd />,
+    element: <App />,
   },
   {
-    path: "/app",
+    path: "/Login",
     element: <App />,
   },
   {

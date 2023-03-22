@@ -1,9 +1,8 @@
 import React, { Fragment } from "react";
 
-export default function App()
-{
+export default function Login() {
     return (
-    <Fragment class="bdyLogin">
+        <Fragment class="bdyLogin">
             <nav class="navbar navbar-expand-lg bg-danger">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">Home</a>
@@ -13,23 +12,23 @@ export default function App()
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                
+
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
-                            <input id="searchnvr" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            <input id="searchnvr" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
                 </div>
             </nav>
             <div class="container-fluid">
-                <br/>
+                <br />
                 <div class="col-12">
                     <section>
                         <div class="row justify-content-center">
                             <div class="col-3">
-                                <br/><br/><br/><br/><br/><br/><br/><br/>
+                                <br /><br /><br /><br /><br /><br /><br /><br />
                                 <form class="w3-container">
                                     <div class="row justify-content-left">
                                         <div class="col-9">
@@ -51,7 +50,7 @@ export default function App()
                                 </form>
                             </div>
                             <div class="col-3">
-                                <img src="user-icn.png" width="300" height="300" alt=''/>
+                                <img src="user-icn.png" width="300" height="300" alt='' />
                                 <div class="row justify-content-center">
                                     <div class="col-11">
                                         <h4>Ingresa tu e-mail, teléfono</h4>
@@ -76,18 +75,6 @@ export default function App()
         </Fragment>
     );
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

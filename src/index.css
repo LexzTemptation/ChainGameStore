@@ -1,7 +1,6 @@
 /**/
 @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
 
-<<<<<<< HEAD
 body {
   margin: 0;
   /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -29,8 +28,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-=======
->>>>>>> 4fb5829d5126f56c0f940455481f70397a696da6
 a.createAccount 
 {
   font-size: 0.9em;
