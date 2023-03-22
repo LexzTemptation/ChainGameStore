@@ -1,0 +1,203 @@
+/**/
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+
+body {
+  margin: 0;
+  background-image: url(../src/images/bkg-login.webp);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;*/
+
+  font-family: 'Contrail One', cursive;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a.createAccount 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  padding: 7.5px 17px;
+  border: none;
+  border-radius: 7px;
+  background-color: gray;
+  color: white;
+}
+
+a.createAccount:hover 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  padding: 7.5px 17px;
+  border: 0.1px solid whitesmoke;
+  border-radius: 7px;
+  background-color: transparent;
+  color: white;
+}
+
+button.btnCreateAccnt 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  padding: 10px 20px;
+  display: inline-block;
+  border: none;
+  border-radius: 7px;
+  background-color: #F7342B;
+  color: white;
+}
+
+button.btnCreateAccnt:hover 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  padding: 10px 20px;
+  border: 0.1px solid #F7342B;
+  border-radius: 7px;
+  background-color: transparent;
+  color: white;
+}
+
+button.login 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  padding: 7.5px 17px;
+  display: inline-block;
+  border: none;
+  border-radius: 7px;
+  background-color: #F7342B;
+  color: white;
+}
+
+button.login:hover 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  padding: 7.5px 17px;
+  border: 0.1px solid #FF4500;
+  border-radius: 7px;
+  background-color: transparent;
+  color: white;
+}
+
+button.createAccount 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 7.5px 17px;
+  border: none;
+  border-radius: 7px;
+  background-color: gray;
+  color: white;
+}
+
+button.createAccount:hover 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  padding: 7.5px 17px;
+  border: 0.1px solid whitesmoke;
+  border-radius: 7px;
+  background-color: transparent;
+  color: white;
+}
+
+button.btnCreateAccnt 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  padding: 7.5px 80px;
+  display: inline-block;
+  border: none;
+  border-radius: 7px;
+  background-color: #F7342B;
+  color: white;
+}
+
+button.btnCreateAccnt:hover 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  padding: 7.5px 80px;
+  border: 0.1px solid #F7342B;
+  border-radius: 7px;
+  background-color: transparent;
+  color: white;
+}
+
+code 
+{
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+section
+{
+  background-repeat: no-repeat;
+  background-image: url(../src/images/bkg-login.webp);
+}
+
+h1, h4
+{
+  color: white;
+}
+
+input
+{
+  font-size: 0.9em;
+  background: transparent;
+  border: transparent;
+  border-bottom: 3px solid #FF4500;
+  width: 100%;
+  color: white;
+}
+
+input:hover 
+{
+  font-size: 0.9em;
+  background: transparent;
+  border: transparent;
+  border-bottom: 3px solid #FF4500;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input.inpt-cc
+{
+  font-size: 0.9em;
+  background: transparent;
+  border: transparent;
+  border-bottom: 3px solid #FF4500;
+  width: 100%;
+  color: white;
+}
+
+input.form-control me-2
+{
+  font-size: 0.9em;
+  border-bottom: 3px solid cyan;
+  width: 100%;
+  color: white;
+}
+
+input.inpt-cc:hover 
+{
+  font-size: 0.9em;
+  border-bottom: 3px solid cyan;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input.inpt-cc:hover 
+{
+  font-size: 0.9em;
+  background: transparent;
+  border: transparent;
+  border-bottom: 3px solid #FF4500;
+  color: rgba(255, 255, 255, 0.5);
+}
