@@ -28,6 +28,23 @@ export default function Login() {
                     <section>
                         <div class="row justify-content-center">
                             <div class="col-3">
+                                <div class="row justify-content-center">
+                                    <div class="col-11">
+                                        <h4>Ingresa tu e-mail, teléfono</h4>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-6">
+                                        <h4>o usuario de</h4>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-8">
+                                        <h4>CHAIN GAME STORE</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
                                 <br /><br /><br /><br /><br /><br /><br /><br />
                                 <form class="w3-container">
                                     <div class="row justify-content-left">
@@ -48,24 +65,6 @@ export default function Login() {
                                         </div>
                                     </div>
                                 </form>
-                            </div>
-                            <div class="col-3">
-                                <img src="user-icn.png" width="300" height="300" alt='' />
-                                <div class="row justify-content-center">
-                                    <div class="col-11">
-                                        <h4>Ingresa tu e-mail, teléfono</h4>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-6">
-                                        <h4>o usuario de</h4>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-8">
-                                        <h4>CHAIN GAME STORE</h4>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <br /><br /><br /><br /><br />
