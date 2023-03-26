@@ -12,6 +12,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.bdyHome
+{
+  background-color: whitesmoke;
+}
+
 .bdyLogin
 {
   margin: 0;
@@ -28,12 +33,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a
+{
+  text-decoration: none;
+  transition-duration: 0.2s;
+  color: white;
+}
+
+a:hover
+{
+  text-decoration: none;
+  transition-duration: 0.2s;
+  color: #6dd5ed;
+}
+
 a.createAccount 
 {
   font-size: 0.9em;
   transition-duration: 0.4s;
   text-decoration: none;
-  padding: 7.5px 17px;
+  padding: 9.5px 17px;
   border: none;
   border-radius: 7px;
   background-color: gray;
@@ -45,29 +64,11 @@ a.createAccount:hover
   font-size: 0.9em;
   transition-duration: 0.4s;
   text-decoration: none;
-  padding: 7.5px 17px;
+  padding: 9.5px 17px;
   border: 0.1px solid whitesmoke;
   border-radius: 7px;
   background-color: transparent;
   color: white;
-}
-
-
-
-body 
-{
-  margin: 0;
-  background-image: url(../src/images/bkg-login.webp);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;*/
-
-  font-family: 'Contrail One', cursive;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 button.btnCreateAccnt 
@@ -101,7 +102,7 @@ button.login
   display: inline-block;
   border: none;
   border-radius: 7px;
-  background-color: #F7342B;
+  background-color: #500AC4;
   color: white;
 }
 
@@ -110,29 +111,7 @@ button.login:hover
   font-size: 0.9em;
   transition-duration: 0.4s;
   padding: 7.5px 17px;
-  border: 0.1px solid #FF4500;
-  border-radius: 7px;
-  background-color: transparent;
-  color: white;
-}
-
-button.createAccount 
-{
-  font-size: 0.9em;
-  transition-duration: 0.4s;
-  padding: 7.5px 17px;
-  border: none;
-  border-radius: 7px;
-  background-color: gray;
-  color: white;
-}
-
-button.createAccount:hover 
-{
-  font-size: 0.9em;
-  transition-duration: 0.4s;
-  padding: 7.5px 17px;
-  border: 0.1px solid whitesmoke;
+  border: 0.1px solid #500AC4;
   border-radius: 7px;
   background-color: transparent;
   color: white;
@@ -161,16 +140,16 @@ button.btnCreateAccnt:hover
   color: white;
 }
 
+.card
+{
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
 code 
 {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-section
-{
-  background-repeat: no-repeat;
-  background-image: url(../src/images/bkg-login.webp);
 }
 
 h1, h4
@@ -178,23 +157,30 @@ h1, h4
   color: white;
 }
 
+input:focus {
+  border-bottom: 3px solid #500AC4;
+  color: white;
+  /* oranges! yey */
+}
+
 input
 {
+  text-align: center;
   font-size: 0.9em;
   background: transparent;
   border: transparent;
-  border-bottom: 3px solid cyan;
+  border-bottom: 3px solid #006BE4;
   width: 100%;
   color: white;
   outline: none;
 }
 
-input:hover 
+input:hover
 {
   font-size: 0.9em;
   border: transparent;
-  border-bottom: 3px solid #FF4500;
-  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 3px solid #500AC4;
+  color: white;
 }
 
 input.inpt-ca
@@ -229,4 +215,16 @@ input.inpt-cc:hover
   border: transparent;
   border-bottom: 3px solid #FF4500;
   color: rgba(255, 255, 255, 0.5);
+}
+
+nav
+{
+  background-color: #00bfff;
+}
+
+::placeholder
+ {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 255, 255, 0.8);
+  /* Firefox */
 }
