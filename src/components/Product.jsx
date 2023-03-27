@@ -37,13 +37,16 @@ export default function Product() {
     };
 
     return (
-      <Card sx={{ maxWidth: 345 }}>
+      <Card
+      fontFamily="'Contrail One', cursive"
+       sx={{ maxWidth: 345 }}>
         <CardHeader
           action={
             <Typography
               className={ClassNames.action}
               variant="h5"
               color="textSecondary"
+              fontFamily="'Contrail One', cursive"
             >
               &nbsp;
               {accounting.formatMoney(1699, "$")}
@@ -59,8 +62,9 @@ export default function Product() {
           alt="Paella dish"
         />
         <CardContent>
-          <Typography variant="body2" color="text.secondary">
-            Cotrol de juegos
+          <Typography
+            fontFamily="'Contrail One', cursive" variant="body2" color="text.secondary">
+            Control de juegos
             {/*  */}
           </Typography>
         </CardContent>
@@ -82,8 +86,8 @@ export default function Product() {
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
-            <Typography paragraph>Descripción:</Typography>
-            <Typography paragraph>
+            <Typography fontFamily="'Contrail One', cursive" paragraph>Descripción:</Typography>
+            <Typography fontFamily="'Contrail One', cursive" paragraph>
               Perfecciona tu juego. Experimente el diseño modernizado del
               control inalámbrico Xbox Pulse Red, que con su superficie
               texturizada y geometría refinada brinda más comodidad y control
