@@ -16,7 +16,7 @@ export default function Login() {
                 <div class="col-12">
                     <div class="row justify-content-center">
                         <div class="col-7">
-                            <br /><br /><br />
+                            <br /><br />
                             <div class="card">
                                 <div class="row justify-content-center">
                                     <div class="col-4">
