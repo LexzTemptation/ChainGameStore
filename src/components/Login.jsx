@@ -46,11 +46,11 @@ export default function Login() {
                                     </div>
                                         <br /><br />
                                     <div class="row justify-content-center">
-                                        <div class="col-2">
+                                        {/* <div class="col-2">
                                             <div style={{ fontSize: "1em", color: "#006BE4" }}>
                                                 <FontAwesomeIcon icon={faCheckSquare} />&nbsp;&nbsp;&nbsp;{"Recordar"}
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div class="col-3">
                                             <div style={{ fontSize: "1em", color: "#006BE4" }}>
                                                 <a href="/">¿Olvidaste tu contraseña?</a>
