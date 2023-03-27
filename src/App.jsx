@@ -1,7 +1,12 @@
 //
+import { Fragment } from "react";
+import Navbar from "./components/Navbar";
+import Product from "./components/Product";
+
 export default function App() {
     return (
-            <nav class="navbar navbar-expand-lg bg-$indigo:#6610f2">
+        <Fragment>
+            {/* <nav class="navbar navbar-expand-lg bg-$indigo:#6610f2">
                 <a class="navbar-brand" href="/">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,6 +19,11 @@ export default function App() {
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </nav> */}
+            <div>
+                <Navbar/>
+                <Product/>
+            </div>
+        </Fragment>
     );
 }
