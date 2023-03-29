@@ -1,0 +1,218 @@
+/**/
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+
+body {
+  margin: 0;
+  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;*/
+
+  font-family: 'Contrail One', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bdyHome
+{
+  font-family: 'Contrail One', cursive;
+  background-color: whitesmoke;
+}
+
+.bdyLogin
+{
+  margin: 0;
+  /* background-image: url(../src/images/bkg-login.webp); */
+  background: linear-gradient(to right,#FC5C7D, #6DD5FA);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;*/
+
+  font-family: 'Contrail One', cursive;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a
+{
+  text-decoration: none;
+  transition-duration: 0.2s;
+  color: white;
+}
+
+.hmeBtn
+{
+  font-family: 'Contrail One', cursive;
+}
+
+a:hover
+{
+  text-decoration: none;
+  transition-duration: 0.2s;
+  color: #6dd5ed;
+}
+
+a.createAccount 
+{
+  text-align: center;
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  padding: 9.5px 17px;
+  border: none;
+  border-radius: 7px;
+  background-color: gray;
+  color: white;
+}
+
+a.createAccount:hover 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  padding: 9.5px 17px;
+  border: 0.1px solid whitesmoke;
+  border-radius: 7px;
+  background-color: transparent;
+  color: white;
+}
+
+a.btnCreateAccnt 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  padding: 7.5px 85px;
+  display: inline-block;
+  border: none;
+  border-radius: 7px;
+  background-color: #500AC4;
+  color: white;
+}
+
+a.btnCreateAccnt:hover {
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  padding: 7.5px 85px;
+  border: 0.1px solid #500AC4;
+  border-radius: 7px;
+  background-color: transparent;
+  color: white;
+}
+
+button.login 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  padding: 7.5px 17px;
+  display: inline-block;
+  border: none;
+  border-radius: 7px;
+  background-color: #500AC4;
+  color: white;
+}
+
+button.login:hover 
+{
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+  padding: 7.5px 17px;
+  border: 0.1px solid #500AC4;
+  border-radius: 7px;
+  background-color: transparent;
+  color: white;
+}
+
+.card
+{
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.CardHeader
+{
+  font-family: 'Contrail One', cursive;
+}
+
+code 
+{
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h4
+{
+  color: white;
+}
+
+input:focus {
+  border-bottom: 3px solid #500AC4;
+  color: white;
+  /* oranges! yey */
+}
+
+input
+{
+  text-align: center;
+  font-size: 0.9em;
+  background: transparent;
+  border: transparent;
+  border-bottom: 3px solid #006BE4;
+  width: 100%;
+  color: white;
+  outline: none;
+}
+
+input:hover
+{
+  font-size: 0.9em;
+  border: transparent;
+  border-bottom: 3px solid #500AC4;
+  color: white;
+}
+
+input.inpt-ca
+{
+  text-align: center;
+  font-size: 0.9em;
+  background: transparent;
+  border: transparent;
+  border-bottom: 3px solid #006BE4;
+  width: 100%;
+  color: white;
+  outline: none;
+}
+
+input.form-control me-2
+{
+  font-size: 0.9em;
+  border-bottom: 3px solid cyan;
+  width: 100%;
+  color: white;
+}
+
+input.inpt-ca:hover 
+{
+  font-size: 0.9em;
+  border-bottom: 3px solid #500AC4;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus {
+  border-bottom: 3px solid #500AC4;
+  color: white;
+  /* oranges! yey */
+}
+
+nav
+{
+  background-color: #00bfff;
+}
+
+::placeholder
+ {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 255, 255, 0.8);
+  /* Firefox */
+}
