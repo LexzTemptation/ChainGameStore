@@ -1,0 +1,7 @@
+.container-game{
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px;
+}
