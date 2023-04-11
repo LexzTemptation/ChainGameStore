@@ -6,4 +6,9 @@
 
 
 
+Comando para correr BKND (Alejandro)
+(HP lap)
 
+
+(GTO lap)
+/usr/bin/env C:\\Program\ Files\\BellSoft\\LibericaJDK-17-Full\\bin\\java.exe @C:\\Users\\GTO\\AppData\\Local\\Temp\\cp_57rynptsz30f39pp1belk7olh.argfile com.chaingame.store.StoreApplication 
