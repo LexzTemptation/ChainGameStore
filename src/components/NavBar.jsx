@@ -8,7 +8,8 @@ function NavBar(){
             <header>
 
                 <Link to={"/videoGames"}>Video Juegos</Link>
-
+                &nbsp;
+                <Link to={"/login"}>Login</Link>
             </header>
     )
 }
