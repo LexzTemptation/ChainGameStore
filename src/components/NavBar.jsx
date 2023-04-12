@@ -1,16 +1,22 @@
-import { BrowserRouter, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
-function NavBar(){
+function NavBar() {
 
-    return(
+    return (
 
-            <header>
+        <header>
 
-                <Link to={"/videoGames"}>Video Juegos</Link>
-                &nbsp;
-                <Link to={"/login"}>Login</Link>
-            </header>
+            <Link to={"/videoGames"}>Video Juegos</Link>
+            &nbsp;
+            <Link to={"/consoles"}>Consolas</Link>
+            &nbsp;
+            <Link to={"/controls"}>Controles</Link>
+            &nbsp;
+            <Link to={"/accesories"}>Accesorios</Link>
+            &nbsp;
+            <Link to={"/login"}>Login</Link>
+        </header>
     )
 }
 

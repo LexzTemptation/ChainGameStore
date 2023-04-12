@@ -25,3 +25,4 @@ function ItemVideoGame({data, setAccion, setDataDetail}){
 }
 
 export default ItemVideoGame
+
