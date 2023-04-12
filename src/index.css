@@ -72,6 +72,7 @@ a.createAccount:hover {
 }
 
 a.btnCreateAccnt {
+  text-decoration: none;
   font-size: 0.9em;
   transition-duration: 0.4s;
   padding: 7.5px 85px;
