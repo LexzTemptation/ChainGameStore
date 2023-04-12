@@ -1,4 +1,5 @@
-
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import "./ItemVideoGame.css"
 
 
@@ -15,13 +16,20 @@ function ItemConsole({ data, setAccion, setDataDetail }) {
     }
 
     return (
-        <div onClick={handlerDetail} className="container-game">
+        <div>
+                {/* <div>
+                <div onClick={handlerDetail} className="container-game">
 
-            <p>{titulo}</p>
-            <p>{precio}</p>
-            <p>{publicador}</p>
-            <img src={foto} width={50}/>
+                    <p>{titulo}</p>
+                    <p>{precio}</p>
+                    <p>{publicador}</p>
+                    <img src={foto} width={50} alt=""/>
 
+                </div>
+            </div> */}
+            < Card >
+                <Card.Body>This is some text within a card body.</Card.Body>
+            </Card >
         </div>
     )
 }
