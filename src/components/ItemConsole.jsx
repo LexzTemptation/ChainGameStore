@@ -1,11 +1,12 @@
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import "./ItemVideoGame.css"
 
 
 function ItemConsole({ data, setAccion, setDataDetail }) {
 
-    let {titulo, precio, publicador} = data["producto"]
+    let {idConsola, titulo, precio, descripcion} = data["producto"]
     let {foto} = data["listaFotos"][0]
 
     const handlerDetail = () => {
@@ -22,14 +23,29 @@ function ItemConsole({ data, setAccion, setDataDetail }) {
 
                     <p>{titulo}</p>
                     <p>{precio}</p>
-                    <p>{publicador}</p>
+                    <p>{descripcion}</p>
                     <img src={foto} width={50} alt=""/>
 
                 </div>
             </div> */}
-            < Card >
-                <Card.Body>This is some text within a card body.</Card.Body>
-            </Card >
+            <Row md={4} lg={6} className="g-1">
+                {Array.from({ length: 1 }).map((_, idx) => (
+                    <Col xs={{ order: 'first' }}>
+                        <Card>
+                            <Card.Img variant="top" src={foto} />
+                            <Card.Body>
+                                <Card.Title>Card title</Card.Title>
+                                <Card.Text>
+                                    This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit
+                                    longer.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                        &nbsp;
+                    </Col>
+                ))}
+            </Row>
         </div>
     )
 }
