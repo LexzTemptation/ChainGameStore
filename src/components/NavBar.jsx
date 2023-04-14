@@ -13,7 +13,7 @@ function NavBar() {
             &nbsp;
             <Link to={"/controls"}>Controles</Link>
             &nbsp;
-            <Link to={"/accesories"}>Accesorios</Link>
+            <Link to={"/accessories"}>Accesorios</Link>
             &nbsp;
             <Link to={"/historial"}>Historial</Link>
             &nbsp;
