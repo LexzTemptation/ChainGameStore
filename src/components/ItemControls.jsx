@@ -4,10 +4,10 @@ import Row from 'react-bootstrap/Row';
 import "./ItemVideoGame.css"
 
 
-function ItemConsole({ data, setAccion, setDataDetail }) {
+function ItemControls({ data, setAccion, setDataDetail }) {
 
-    let {titulo, precio, descripcion} = data["producto"]
-    let {foto} = data["listaFotos"][0]
+    let { titulo, precio, descripcion } = data["producto"]
+    let { foto } = data["listaFotos"][0]
 
     /* const handlerDetail = () => {
 
@@ -30,7 +30,7 @@ function ItemConsole({ data, setAccion, setDataDetail }) {
             </div> */}
             <Row className='rows'>
                 <Col className='columns'>
-                    <Card class="card" style={{ width: '18rem', height: '430px'}}>
+                    <Card class="card" style={{ width: '18rem', height: '480px' }}>
                         <Card.Img class="card-img-top" variant="top" src={foto} alt="" />
                         <Card.Body class="card-body">
                             <Card.Title class="card-title">{titulo}</Card.Title>
@@ -51,4 +51,4 @@ function ItemConsole({ data, setAccion, setDataDetail }) {
     )
 }
 
-export default ItemConsole
+export default ItemControls

@@ -1,4 +1,5 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+/* import { BrowserRouter, Link, Route, Routes } from "react-router-dom" */
 import VideoGame from "./VideoGame"
 import NavBar from "./NavBar"
 import Login from "./Login"
