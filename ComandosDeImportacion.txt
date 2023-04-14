@@ -17,7 +17,7 @@ Comando para correr BKND
         /usr/bin/env C:\\Users\\Alejandro\ Cornejo\\.vscode\\extensions\\redhat.java-1.17.0-win32-x64\\jre\\17.0.6-win32-x86_64\\bin\\java.exe @C:\\Users\\ALEJAN~1\\AppData\\Local\\Temp\\cp_4xisgyxt86rauwatx2eaj3mra.argfile com.chaingame.store.StoreApplication 
 
         (GTO lap)
-        /usr/bin/env C:\\Program\ Files\\BellSoft\\LibericaJDK-17-Full\\bin\\java.exe @C:\\Users\\GTO\\AppData\\Local\\Temp\\cp_57rynptsz30f39pp1belk7olh.argfile com.chaingame.store.StoreApplication 
+        /usr/bin/env C:\\Users\\GTO\\.vscode\\extensions\\redhat.java-1.17.0-win32-x64\\jre\\17.0.6-win32-x86_64\\bin\\java.exe @C:\\Users\\GTO\\AppData\\Local\\Temp\\cp_77e3j7v2noulpuitlgc4gz81c.argfile com.chaingame.store.StoreApplication 
 
 
 
