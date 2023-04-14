@@ -15,6 +15,8 @@ function NavBar() {
             &nbsp;
             <Link to={"/accesories"}>Accesorios</Link>
             &nbsp;
+            <Link to={"/historial"}>Historial</Link>
+            &nbsp;
             <Link to={"/login"}>Login</Link>
         </header>
     )

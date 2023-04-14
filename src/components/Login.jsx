@@ -1,7 +1,29 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 
-export default function Login() {
+export default function Login({setCurrentClient}) {
+
+    const handlerLogin = () => {
+
+        let email = document.getElementById("email").value
+        let password = document.getElementById("password").value
+
+        let data = {
+            userName: email,
+            password: password
+        }
+        
+        fetch("http://localhost:8080/login/user", {
+            method: "POST", 
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        }).then(res => res.json())
+        .then(cliente => setCurrentClient(cliente))
+
+    }
+
     return (
         <div class="bdyLogin">
             <div class="container-fluid">
@@ -29,23 +51,23 @@ export default function Login() {
                                         <img src="user-icn.png" width="245" height="245" alt="" />
                                     </div>
                                 </div>
-                                <form>
+                                <div>
                                     <div class="row justify-content-center">
                                         <div class="col-5">
-                                            <input type="text" placeholder="Email, teléfono, usuario" />
+                                            <input type="text" placeholder="Email" id="email" />
                                         </div>
                                     </div>
                                     <br />
                                     <div class="row justify-content-center">
                                         <div class="col-5">
-                                            <input type="password" placeholder="Contraseña" />
+                                            <input type="password" placeholder="Contraseña" id="password" />
                                         </div>
                                     </div>
                                     <br />
                                     <div class="row justify-content-center">
                                         <br /><br />
                                         <div class="col-4">
-                                            <button class="login" >Iniciar sesion</button>
+                                            <button class="login" onClick={handlerLogin}>Iniciar sesion</button>
                                             &nbsp;&nbsp;
                                             <a href="/createaccount" class="createAccount">Crear cuenta</a>
                                         </div>
@@ -64,7 +86,7 @@ export default function Login() {
                                         </div>
                                     </div>
                                     <br />
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,12 +1,13 @@
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import {Container}  from 'react-bootstrap';
 import "./ItemVideoGame.css"
 
 
 function ItemConsole({ data, setAccion, setDataDetail }) {
 
-    let {idConsola, titulo, precio, descripcion} = data["producto"]
+    let {titulo, precio, descripcion} = data["producto"]
     let {foto} = data["listaFotos"][0]
 
     const handlerDetail = () => {
@@ -18,7 +19,7 @@ function ItemConsole({ data, setAccion, setDataDetail }) {
 
     return (
         <div>
-                {/* <div>
+            {/* <div>
                 <div onClick={handlerDetail} className="container-game">
 
                     <p>{titulo}</p>
@@ -28,23 +29,21 @@ function ItemConsole({ data, setAccion, setDataDetail }) {
 
                 </div>
             </div> */}
-            <Row md={4} lg={6} className="g-1">
-                {Array.from({ length: 1 }).map((_, idx) => (
-                    <Col xs={{ order: 'first' }}>
-                        <Card>
-                            <Card.Img variant="top" src={foto} />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit
-                                    longer.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        &nbsp;
-                    </Col>
-                ))}
+            <Row className='rows'>
+                <Col className='columns'>
+                    <Card class="card" style={{ width: '18rem', height: '400px'}}>
+                        <Card.Img class="card-img-top" variant="top" src={foto} alt="" />
+                        <Card.Body class="card-body">
+                            <Card.Title class="card-title">{titulo}</Card.Title>
+                            <Card.Text class="card-text">
+                                <details>
+                                    <summary>Ver más...</summary>
+                                    {descripcion}
+                                </details>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
             </Row>
         </div>
     )
