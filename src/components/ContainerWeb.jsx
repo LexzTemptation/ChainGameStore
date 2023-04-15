@@ -21,6 +21,7 @@ function ContainerWeb() {
                 <NavBar/>
 
                 <Routes>
+                    <Route path="/"/>
                     <Route path="/videoGames" element={<VideoGame/>} />
                     <Route path="/login" element={<Login setCurrentClient={setCurrentClient}/>} />
                     <Route path="/createaccount" element={<CreateAccount />} />

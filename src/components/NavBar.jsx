@@ -7,6 +7,8 @@ function NavBar() {
 
         <header>
 
+            <Link to={"/"}>Chain Store</Link>
+            &nbsp;
             <Link to={"/videoGames"}>Video Juegos</Link>
             &nbsp;
             <Link to={"/consoles"}>Consolas</Link>
