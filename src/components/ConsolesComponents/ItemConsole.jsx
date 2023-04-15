@@ -22,7 +22,7 @@ function ItemConsole({ data, setAccion, setDataDetail }) {
             <div onClick={handlerDetail} >
                 <Row className='rows'>
                     <Col className='columns'>
-                        <Card class="card" style={{ width: '18rem', height: '500px'}}>
+                        <Card class="card" style={{ width: '18rem', height: '520px'}}>
                             <Card.Img class="card-img-top" variant="top" src={foto} alt="" />
                             <Card.Body class="card-body">
                                 <Card.Title class="card-title">{titulo}</Card.Title>
