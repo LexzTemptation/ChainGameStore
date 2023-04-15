@@ -8,7 +8,7 @@ function ItemVideoGame({data, setAccion, setDataDetail}){
 
     let {genero} = data
     let {titulo, precio, descripcion} = data["producto"]
-    let { foto } = data["listaFotos"][0]
+    let { foto } = data["producto"]["listaFotos"][0]
 
     const handlerDetail = () => {
 

@@ -7,7 +7,7 @@ import "./ItemVideoGame.css"
 function ItemControls({ data, setAccion, setDataDetail }) {
 
     let { titulo, precio, descripcion } = data["producto"]
-    let { foto } = data["listaFotos"][0]
+    let { foto } = data["producto"]["listaFotos"][0]
 
     const handlerDetail = () => {
 

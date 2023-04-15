@@ -13,7 +13,7 @@ function Controls() {
     return (
         <div>
             {
-                accion === "products"
+                accion === "products" //
                     ? controls ? controls.map(control => <ItemControls data={control} setAccion={setAccion} setDataDetail={setDataDetail} />) : null
                     : <DetailesVideoGame setAccion={setAccion} dataDatail={dataDatail} />
             }

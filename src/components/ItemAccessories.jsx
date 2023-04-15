@@ -7,7 +7,7 @@ import "./ItemVideoGame.css"
 function ItemAccessories({ data, setAccion, setDataDetail }) {
 
     let { titulo, precio, descripcion } = data["producto"]
-    let { foto } = data["listFotos"][0]
+    let { foto } = data["producto"]["listaFotos"][0]
 
     const handlerDetail = () => {
 
@@ -18,6 +18,7 @@ function ItemAccessories({ data, setAccion, setDataDetail }) {
 
     return (
         <div>
+
             {/* <div>
                 <div onClick={handlerDetail} className="container-game">
 
@@ -49,6 +50,8 @@ function ItemAccessories({ data, setAccion, setDataDetail }) {
                     </Col>
                 </Row>
             </div>
+
+            
         </div>
     )
 }
