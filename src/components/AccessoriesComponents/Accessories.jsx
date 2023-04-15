@@ -1,7 +1,7 @@
 import { useState } from "react"
-import useGetAccessories from "../Hooks/useGetAccessories"
+import useGetAccessories from "../../Hooks/useGetAccessories"
 import ItemAccessories from "./ItemAccessories"
-import DetailesVideoGame from "./DetailesVideoGame"
+import DetailesVideoGame from "../DetailesVideoGame"
 
 function Accessories() {
 

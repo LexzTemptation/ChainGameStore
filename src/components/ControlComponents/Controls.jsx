@@ -1,7 +1,7 @@
 import { useState } from "react"
-import useGetControls from "../Hooks/useGetControls"
+import useGetControls from "../../Hooks/useGetControls"
 import ItemControls from "./ItemControls"
-import DetailesVideoGame from "./DetailesVideoGame"
+import DetailesVideoGame from "../DetailesVideoGame"
 
 function Controls() {
 
