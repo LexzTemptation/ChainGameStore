@@ -1,7 +1,7 @@
 import { useState } from "react"
 import useGetConsoles from "../../Hooks/useGetConsoles"
 import ItemConsole from "./ItemConsole"
-import DetailesVideoGame from "../DetailesVideoGame"
+import DetailesVideoGame from "../VideoGameComponents/DetailesVideoGame"
 
 
 function Consoles() {

@@ -1,16 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 /* import { BrowserRouter, Link, Route, Routes } from "react-router-dom" */
-import VideoGame from "./VideoGame"
+import VideoGame from "./VideoGameComponents/VideoGame"
 import NavBar from "./NavBar"
 import Login from "./Login"
 import CreateAccount from "./CreateAccount"
-import Controls from "./Controls"
-import Consoles from "./Consoles"
+import Controls from "./ControlComponents/Controls"
+import Consoles from "./ConsolesComponents/Consoles"
 import Car from "./Car"
-import Accessories from "./Accessories"
+import Accessories from "./AccessoriesComponents/Accessories"
 import { useState } from "react"
-
-
 
 function ContainerWeb() {
 

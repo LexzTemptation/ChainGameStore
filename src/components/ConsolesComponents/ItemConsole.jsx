@@ -1,12 +1,12 @@
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import "./ItemVideoGame.css"
+import "../VideoGameComponents/ItemVideoGame.css"
 
 
 function ItemConsole({ data, setAccion, setDataDetail }) {
 
-    let {titulo, precio, descripcion} = data["producto"]
+    let {titulo, precio, estado} = data["producto"]
     let { foto } = data["producto"]["listaFotos"][0]
 
     const handlerDetail = () => {
@@ -38,7 +38,7 @@ function ItemConsole({ data, setAccion, setDataDetail }) {
                                 <Card.Text class="card-text">
                                     <details>
                                         <summary>Ver más...</summary>
-                                        {descripcion}
+                                        {estado}
                                     </details>
                                 </Card.Text>
                             </Card.Body>

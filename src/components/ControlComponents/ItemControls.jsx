@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import "./ItemVideoGame.css"
+import "../VideoGameComponents/ItemVideoGame.css"
 
 
 function ItemControls({ data, setAccion, setDataDetail }) {

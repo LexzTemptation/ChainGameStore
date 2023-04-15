@@ -1,5 +1,5 @@
 import { useState } from "react"
-import useGetGames from "../Hooks/useGetGames"
+import useGetGames from "../../Hooks/useGetGames"
 import ItemVideoGame from "./ItemVideoGame"
 import DetailesVideoGame from "./DetailesVideoGame"
 
