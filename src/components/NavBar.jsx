@@ -1,27 +1,32 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-router-dom"
-
+import "./NavBar.css"
 
 function NavBar() {
-
-    return (
-
-        <header>
-
-            <Link to={"/"}>Chain Store</Link>
-            &nbsp;
-            <Link to={"/videoGames"}>Video Juegos</Link>
-            &nbsp;
-            <Link to={"/consoles"}>Consolas</Link>
-            &nbsp;
-            <Link to={"/controls"}>Controles</Link>
-            &nbsp;
-            <Link to={"/accessories"}>Accesorios</Link>
-            &nbsp;
-            <Link to={"/historial"}>Historial</Link>
-            &nbsp;
-            <Link to={"/login"}>Login</Link>
-        </header>
-    )
+  return (
+    <>
+      <Navbar bg="primary" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">Chain Store</Navbar.Brand>
+          <Nav className="me-auto">
+            <Link to={"/videoGames"} className="link">Video Juegos</Link>
+            &nbsp;&nbsp;
+            <Link to={"/consoles"} className="link">Consolas</Link>
+            &nbsp;&nbsp;
+            <Link to={"/controls"} className="link">Controles</Link>
+            &nbsp;&nbsp;
+            <Link to={"/accessories"} className="link">Accesorios</Link>
+            &nbsp;&nbsp;
+            <Link to={"/historial"} className="link">Historial</Link>
+            &nbsp;&nbsp;
+            <Link to={"/login"} className="link">Login</Link>
+          </Nav>
+        </Container>
+      </Navbar>
+      </>
+  );
 }
 
-export default NavBar
+export default NavBar;

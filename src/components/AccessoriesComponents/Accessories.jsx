@@ -1,7 +1,7 @@
 import { useState } from "react"
 import useGetAccessories from "../../Hooks/useGetAccessories"
 import ItemAccessories from "./ItemAccessories"
-import DetailesVideoGame from "../VideoGameComponents/DetailesVideoGame"
+import DetailesAccessories from "../AccessoriesComponents/DetailesAccessories"
 
 function Accessories() {
 
@@ -15,7 +15,7 @@ function Accessories() {
             {
                 accion === "products"
                     ? accessories ? accessories.map(accessory => <ItemAccessories data={accessory} setAccion={setAccion} setDataDetail={setDataDetail} />) : null
-                    : <DetailesVideoGame setAccion={setAccion} dataDatail={dataDatail} />
+                    : <DetailesAccessories setAccion={setAccion} dataDatail={dataDatail} />
             }
         </div>
     )

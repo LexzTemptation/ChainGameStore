@@ -1,7 +1,7 @@
 import { useState } from "react"
 import useGetControls from "../../Hooks/useGetControls"
 import ItemControls from "./ItemControls"
-import DetailesVideoGame from "../VideoGameComponents/DetailesVideoGame"
+import DetailesControls from "../ControlComponents/DetailesControls"
 
 function Controls() {
 
@@ -15,7 +15,7 @@ function Controls() {
             {
                 accion === "products" //
                     ? controls ? controls.map(control => <ItemControls data={control} setAccion={setAccion} setDataDetail={setDataDetail} />) : null
-                    : <DetailesVideoGame setAccion={setAccion} dataDatail={dataDatail} />
+                    : <DetailesControls setAccion={setAccion} dataDatail={dataDatail} />
             }
         </div>
     )

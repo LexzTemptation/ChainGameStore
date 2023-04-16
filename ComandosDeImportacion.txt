@@ -19,5 +19,6 @@ Comando para correr BKND
         (GTO lap)
         /usr/bin/env C:\\Program\ Files\\BellSoft\\LibericaJDK-17-Full\\bin\\java.exe @C:\\Users\\GTO\\AppData\\Local\\Temp\\cp_57rynptsz30f39pp1belk7olh.argfile com.chaingame.store.StoreApplication
 
-
+Vane lap
+/usr/bin/env C:\\Users\\medin\\.vscode\\extensions\\redhat.java-1.17.0-win32-x64\\jre\\17.0.6-win32-x86_64\\bin\\java.exe @C:\\Users\\medin\\AppData\\Local\\Temp\\cp_ebeq4gwwok2n6ubjvi5wxo71v.argfile com.chaingame.store.StoreApplication 
 

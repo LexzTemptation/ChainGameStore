@@ -1,7 +1,7 @@
 import { useState } from "react"
 import useGetConsoles from "../../Hooks/useGetConsoles"
 import ItemConsole from "./ItemConsole"
-import DetailesVideoGame from "../VideoGameComponents/DetailesVideoGame"
+import DetailesConsole from "../ConsolesComponents/DetailesConsole"
 
 
 function Consoles() {
@@ -16,7 +16,7 @@ function Consoles() {
             {
                 accion === "products"
                     ? consoles ? consoles.map(console => <ItemConsole data={console} setAccion={setAccion} setDataDetail={setDataDetail} />) : null
-                    : <DetailesVideoGame setAccion={setAccion} dataDatail={dataDatail} />
+                    : <DetailesConsole setAccion={setAccion} dataDatail={dataDatail} />
             }
         </div>
     )

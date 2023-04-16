@@ -1,20 +1,19 @@
 //import useAddShoppingCar from "../Hooks/useAddShoppingCar"
-import "./DetailesVideoGame.css"
+import "./DetailesConsole.css"
 import Carousel from 'react-bootstrap/Carousel';
 import Button from "react-bootstrap/Button"
 import { Col, Row } from "react-bootstrap";
 
 
 
-function DetailesVideoGame({dataDatail, setAccion}){ 
+function DetailesConsole({dataDatail, setAccion}){
 
-    let {genero} = dataDatail
-    let {clasificacion} = dataDatail
-    let {trailer} =dataDatail
-    let {titulo,plataforma,descripcion,precio,garantia,publicador,lanzamiento} = dataDatail["producto"]
+    let {resolucion} = dataDatail
+    let {almacenamiento} = dataDatail
+    let {tipoDeMemoria} = dataDatail
+    let {titulo,descripcion,precio,garantia,publicador,lanzamiento,condicion} = dataDatail["producto"]
     let foto1 = dataDatail["producto"]["listaFotos"][0].foto
     let foto2 = dataDatail["producto"]["listaFotos"][1].foto
-    let foto3 = dataDatail["producto"]["listaFotos"][2].foto
 
 
     const handlerSetAccion = () => {
@@ -36,8 +35,9 @@ function DetailesVideoGame({dataDatail, setAccion}){
     } 
 
     return (
-        <div className="w">
-            <p onClick={handlerSetAccion}>Regresar</p>
+        
+        <div className="wrapper">
+            <p onClick={handlerSetAccion}>Volver a los juegos</p>
 
 
           <div className="containerProduct">
@@ -57,15 +57,8 @@ function DetailesVideoGame({dataDatail, setAccion}){
           src={foto2}
         />
       </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="img-fluid"
-          src={foto3}
-        />
-      </Carousel.Item>
       </Carousel>
                       </Col>
-
                      
 <Col sm={5}>
     <div className="title">
@@ -73,13 +66,13 @@ function DetailesVideoGame({dataDatail, setAccion}){
                 <strong><p className="game">{titulo}</p></strong>
                 <div className="subtitle">
                  <span>
-                    <strong>Plataforma: </strong><p>{plataforma}</p>
+                    <strong>Resolución: </strong><p>{resolucion}</p>
                  </span>
                  <span>
-                    <strong>Género: </strong><p>{genero}</p>
+                    <strong>Almacenamiento: </strong><p>{almacenamiento}</p>
                  </span>
                  <span>
-                    <strong>Clasificación: </strong><p>{clasificacion}</p>
+                    <strong>Tipo de memoria: </strong><p>{tipoDeMemoria}</p>
                  </span>
                 </div>
                 <div className="small"></div>
@@ -99,24 +92,18 @@ function DetailesVideoGame({dataDatail, setAccion}){
 
           <Row className="justify-content-md-center textDetails">
         <Col sm={8}>
-            <h5>Descripción</h5>
+            <h1 className="text-dark">Descripción</h1>
                      <p>{descripcion}</p>
-            <h5>Información adicional:</h5>
+            <h4 className="text-dark">Información adicional:</h4>
             <h6>Garantía valida por:</h6>
             <p>{garantia}</p>
             <h6>Publicado por:</h6>
             <p>{publicador}</p>
             <h6>Lanzamiento:</h6>
             <p>{lanzamiento}</p>
-            <div className="small"></div><br></br>
-            <div className="video">
-            <iframe width="560" height="315" 
-            src={trailer} 
-            title="YouTube video player"
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen></iframe>
-            </div>
+            <h6>Condición:</h6>
+            <p>{condicion}</p>
+            <div className="small"></div>
                  </Col>
       </Row>
               
@@ -126,4 +113,4 @@ function DetailesVideoGame({dataDatail, setAccion}){
     )
 }
 
-export default DetailesVideoGame
+export default DetailesConsole
