@@ -22,6 +22,8 @@ function NavBar() {
             <Link to={"/historial"} className="link">Historial</Link>
             &nbsp;&nbsp;
             <Link to={"/login"} className="link">Login</Link>
+            &nbsp;&nbsp;
+            <Link to={"/car"} className="link">Car</Link>
           </Nav>
         </Container>
       </Navbar>

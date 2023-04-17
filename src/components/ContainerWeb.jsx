@@ -6,7 +6,7 @@ import Login from "./Login"
 import CreateAccount from "./CreateAccount"
 import Controls from "./ControlComponents/Controls"
 import Consoles from "./ConsolesComponents/Consoles"
-/* import Car from "./Car" */
+import Car from "./CarComponents/Car"
 import Accessories from "./AccessoriesComponents/Accessories"
 import { useState } from "react"
 
@@ -28,7 +28,7 @@ function ContainerWeb() {
                     <Route path="/accessories" element={<Accessories />} />
                     <Route path="/controls" element={<Controls />} />
                     <Route path="/consoles" element={<Consoles />} />
-                    {/* <Route path="/car" element={<Car currentClient={currentClient}/>}/> */}
+                    <Route path="/car" element={<Car currentClient={currentClient}/>}/>
 
                 </Routes>
             </BrowserRouter>

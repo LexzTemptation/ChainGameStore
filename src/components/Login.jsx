@@ -20,7 +20,11 @@ export default function Login({setCurrentClient}) {
             },
             body: JSON.stringify(data)
         }).then(res => res.json())
-        .then(cliente => setCurrentClient(cliente))
+        .then(cliente => {
+            setCurrentClient(cliente)
+            window.localStorage.setItem("cliente", JSON.stringify(cliente))
+        })
+
 
     }
 

@@ -1,26 +1,22 @@
+import ItemCar from "./ItemCar"
+import useAddShopingCar from "../../Hooks/useAddShoppingCar"
 
-/* import useAddShopingCar from "../../Hooks/useAddShopingCar" */
-
-function Car(/* {currentClient} */)
+function Car({currentClient})
 {
 
-    //Destructurar el id de currentclient
-    //utilizas tu hook pasandole el id para que te retorne todos los carritos del cliente actual
-    //ya que tienes los datos del carrito debes iterar, por cada iteracion llamas a tu componente itemCar
+   let {idCliente} = currentClient
+   let {car} = useAddShopingCar(idCliente) 
+  
 
-    /* let {carritos} = useAddShopingCar(idcliete) */
-
-    /* return(
+    return(
         <div>
-
-        {
-            carritos.map(car => <ItemCar data={car}/>)
-        
-        }
-
-            <p>Hey</p>
+            {
+                car 
+                ? car.map( carr => <ItemCar />)  
+                : console.log("no") 
+            }
         </div>
-    ) */
+    )
 }
 
 export default Car
