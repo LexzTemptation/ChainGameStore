@@ -19,7 +19,7 @@ function ItemControls({ data, setAccion, setDataDetail }) {
 
     return (
         <div>
-            <div onClick={handlerDetail}>
+            <div>
                 <Row className='rows'>
                     <Col className='columns'>
                         <Card class="card" style={{ width: '18rem', height: '520px' }}>

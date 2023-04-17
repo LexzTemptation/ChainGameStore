@@ -11,9 +11,7 @@ function DetailesControls({dataDatail, setAccion}){
     let {color} = dataDatail
     let {conectoresDeEntrada} = dataDatail
     let {titulo,plataforma,descripcion,precio,garantia,publicador,lanzamiento,condicion} = dataDatail["producto"]
-    let foto1 = dataDatail["producto"]["listaFotos"][0].foto
-    let foto2 = dataDatail["producto"]["listaFotos"][1].foto
-    let foto3 = dataDatail["producto"]["listaFotos"][2].foto
+    let foto1 = dataDatail["producto"]["listaFotos"]
 
 
     const handlerSetAccion = () => {
@@ -44,25 +42,19 @@ function DetailesControls({dataDatail, setAccion}){
                 <Row className="rowProduct">
                       <Col sm={5}>
                       <Carousel variant="dark">
-      <Carousel.Item>
-        <img
-          className="img-fluid"
-          src={foto1}
-        />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="img-fluid"
-          src={foto2}
-        />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="img-fluid"
-          src={foto3}
-        />
-      </Carousel.Item>
-      </Carousel>
+                        {
+                          foto1.map(foto =>{
+                            return(
+                              <Carousel.Item key={foto.idFoto}>
+                                <img
+                                  className="img-fluid"
+                                  src={foto.foto}
+                                />
+                              </Carousel.Item>
+                            )
+                          })
+                        }
+                      </Carousel>
                       </Col>
 
                      
