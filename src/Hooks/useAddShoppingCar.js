@@ -1,8 +1,8 @@
+/* import { useEffect, useState } from "react";
 
-
-function useAddShoppingCar({json}){
-
-    console.log(json);
+function useAddShoppingCar({ json }) {
+  console.log(json);
 }
 
-export default useAddShoppingCar
+export default useAddShoppingCar;
+ */
