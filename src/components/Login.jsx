@@ -1,15 +1,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function Login({setCurrentClient}) {
 
     const handlerLogin = () => {
 
-        let email = document.getElementById("email").value
+        let usuario = document.getElementById("usuario").value
         let password = document.getElementById("password").value
 
         let data = {
-            userName: email,
+            userName: usuario,
             password: password
         }
         
@@ -22,7 +23,6 @@ export default function Login({setCurrentClient}) {
         }).then(res => res.json())
         .then(cliente => {
             setCurrentClient(cliente)
-            window.localStorage.setItem("cliente", JSON.stringify(cliente))
         })
 
 
@@ -35,7 +35,7 @@ export default function Login({setCurrentClient}) {
                 <div class="row justify-content-center">
                     <div class="col-8">
                         <div style={{ fontSize: "1em", color: "whitesmoke" }}>
-                            <a href="/"><FontAwesomeIcon icon={faArrowLeft} />{" Regresar"}</a>
+                            <Link to={"/"}><FontAwesomeIcon icon={faArrowLeft} />{" Regresar"}</Link>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ export default function Login({setCurrentClient}) {
                                 <div>
                                     <div class="row justify-content-center">
                                         <div class="col-5">
-                                            <input type="text" placeholder="Email" id="email" />
+                                            <input type="text" placeholder="Usuario" id="usuario" />
                                         </div>
                                     </div>
                                     <br />
