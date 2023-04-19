@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
+import swal from 'sweetalert';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function CC() {
     
@@ -42,7 +44,12 @@ export default function CC() {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(data)
-        }).then(res => console.log(res))
+        }).then(res => {
+            console.log(res); swal({
+                title: "Ahora puede iniciar sesión",
+                icon: "success"
+            });
+})
 
     }
     
@@ -138,8 +145,8 @@ export default function CC() {
                                 </div>
                                 <br /><br />
                                 <div class="row justify-content-center">
-                                    <div class="col-3">
-                                        <button onClick={handlerCA}  class="btnCreateAccnt" >Crear cuenta</button>
+                                    <div class="col-2">
+                                        <Link to={"/login"}><button onClick={handlerCA} class="login" >Crear cuenta</button></Link>
                                     </div>
                                 </div>
                                 <br /><br /><br /><br /><br />

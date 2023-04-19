@@ -71,7 +71,7 @@ export default function Login({setCurrentClient}) {
                                     <div class="row justify-content-center">
                                         <br /><br />
                                         <div class="col-4">
-                                            <button class="login" onClick={handlerLogin}>Iniciar sesion</button>
+                                            <Link to={"/"}><button class="login" onClick={handlerLogin}>Iniciar sesion</button></Link>
                                             &nbsp;&nbsp;
                                             <a href="/createaccount" class="createAccount">Crear cuenta</a>
                                         </div>

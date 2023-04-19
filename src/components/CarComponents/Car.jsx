@@ -6,7 +6,7 @@ function Car({currentClient})
 {
 
     const [latitud, setLatitud] = useState()
-    const [longitud, setLongitud] = useState();
+    const [longitud, setLongitud] = useState()
 
    let {idCliente} = currentClient
    let {car} = useAddShopingCar(idCliente) 
@@ -36,7 +36,7 @@ function Car({currentClient})
         <div>
             {
                 car 
-                ? car.map( carr => <ItemCar data={carr} longitud={longitud} latitud={latitud} idCliente={idCliente}/>)  
+                    ? car.map(carr => <ItemCar data={carr} longitud={longitud} latitud={latitud} idCliente={idCliente}/>)  
                 : console.log("no") 
             }
         </div>
