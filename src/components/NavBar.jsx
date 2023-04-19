@@ -19,8 +19,6 @@ function NavBar() {
             &nbsp;&nbsp;
             <Link to={"/accessories"} className="link">Accesorios</Link>
             &nbsp;&nbsp;
-            <Link to={"/historial"} className="link">Historial</Link>
-            &nbsp;&nbsp;
             <Link to={"/login"} className="link">Login</Link>
             &nbsp;&nbsp;
             <Link to={"/car"} className="link">Car</Link>

@@ -22,7 +22,7 @@ function ContainerWeb() {
 
                 <Routes>
                     <Route path="/"/>
-                    <Route path="/videoGames" element={<VideoGame/>} />
+                    <Route path="/videoGames" element={<VideoGame dataUser={currentClient}/>} />
                     <Route path="/login" element={<Login setCurrentClient={setCurrentClient}/>} />
                     <Route path="/createaccount" element={<CreateAccount />} />
                     <Route path="/accessories" element={<Accessories />} />

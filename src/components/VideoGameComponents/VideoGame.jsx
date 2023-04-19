@@ -4,7 +4,8 @@ import ItemVideoGame from "./ItemVideoGame"
 import DetailesVideoGame from "./DetailesVideoGame"
 
 
-function VideoGame(){
+function VideoGame({dataUser}){
+
 
     const [accion, setAccion] = useState("products")
     const [dataDatail, setDataDetail] = useState()
@@ -16,7 +17,7 @@ function VideoGame(){
             {
                 accion === "products" 
                 ? games ? games.map(game => <ItemVideoGame data={game} setAccion={setAccion} setDataDetail={setDataDetail}/>) : null 
-                : <DetailesVideoGame setAccion={setAccion} dataDatail={dataDatail}/>
+                : <DetailesVideoGame setAccion={setAccion} dataDatail={dataDatail} dataUser={dataUser}/>
             }
         </div>
     )
