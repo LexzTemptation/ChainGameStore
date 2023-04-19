@@ -3,14 +3,18 @@ import "./DetailesControls.css"
 import Carousel from 'react-bootstrap/Carousel';
 import Button from "react-bootstrap/Button"
 import { Col, Row } from "react-bootstrap";
+import swal from 'sweetalert';
 
 
 
-function DetailesControls({dataDatail, setAccion}){
+function DetailesControls({dataDatail, setAccion, dataUser}){
 
+    let dia= new Date().getDate()
+    let mes = new Date().getMonth()
+    let anio = new Date().getFullYear()
     let {color} = dataDatail
     let {conectoresDeEntrada} = dataDatail
-    let {titulo,plataforma,descripcion,precio,garantia,publicador,lanzamiento,condicion} = dataDatail["producto"]
+    let {titulo,plataforma,descripcion,precio,garantia,publicador,lanzamiento,condicion,idProducto} = dataDatail["producto"]
     let foto1 = dataDatail["producto"]["listaFotos"]
 
 
@@ -20,21 +24,31 @@ function DetailesControls({dataDatail, setAccion}){
 
     const handlerBuy = async () => {
         
-        let dataBuy = {
-            "idCarrito": 0,
-            "fecha": "25/03/2023",
-            "idcliente": 2,
-            "idProducto": 9
-        }
+      let dataBuy = {
+          "idCarrito": 0,
+          "fecha": `${dia}/${mes}/${anio}`,
+          "idcliente": dataUser["idCliente"],
+          "idProducto": idProducto,
+          "cantidad": parseInt(document.getElementById("cantidad").value),
+          "comprado": 0,
+          "onCar": 0
+      }
 
-        //let res = await fetch("http://localhost:8080/shopping/addShoppingCar")
+     let res = await fetch("http://localhost:8080/shopping/addShoppingCar",{
+        method: "POST",
+        headers: {
+          "Content-type":"application/json"
+        },
+        body: JSON.stringify(dataBuy) 
 
-        //console.log(res);  
-    } 
+      })
+
+      console.log(res);  
+  } 
 
     return (
-        <div className="wrapper">
-            <p onClick={handlerSetAccion}>Volver a los juegos</p>
+        <div className="w">
+            <p className="back" onClick={handlerSetAccion}>⇤Regresar</p>
 
 
           <div className="containerProduct">
@@ -72,6 +86,7 @@ function DetailesControls({dataDatail, setAccion}){
                  <span>
                     <strong>Conectores de entrada: </strong><p>{conectoresDeEntrada}</p>
                  </span>
+                 <span><input type="number" className="text-dark input" id="cantidad"/></span>
                 </div>
                 <div className="small"></div>
                 
@@ -79,7 +94,11 @@ function DetailesControls({dataDatail, setAccion}){
                 <h4 className="text-dark">Precio: </h4>
                 <h4 className="text-dark"><small>$</small>{precio}</h4>
                 <div className="d-grid gap-2">
-      <Button variant="outline-primary" size="lg" onClick={handlerBuy}>Agregar al carrito</Button>
+                <Button variant="outline-primary" size="lg" onClick={() => { 
+                  handlerBuy ()
+                  swal("Articulo agregado al carrito","", "success")
+                  
+                  }}>Agregar al carrito</Button>
     </div>
             
     </div>

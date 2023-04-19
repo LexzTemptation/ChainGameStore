@@ -6,6 +6,7 @@ import Login from "./Login"
 import CreateAccount from "./CreateAccount"
 import Controls from "./ControlComponents/Controls"
 import Consoles from "./ConsolesComponents/Consoles"
+import History from "./History"
 /* import Car from "./Car" */
 import Accessories from "./AccessoriesComponents/Accessories"
 import { useState } from "react"
@@ -22,12 +23,13 @@ function ContainerWeb() {
 
                 <Routes>
                     <Route path="/"/>
-                    <Route path="/videoGames" element={<VideoGame/>} />
+                    <Route path="/videoGames" element={<VideoGame dataUser={currentClient}/>} />
                     <Route path="/login" element={<Login setCurrentClient={setCurrentClient}/>} />
                     <Route path="/createaccount" element={<CreateAccount />} />
-                    <Route path="/accessories" element={<Accessories />} />
-                    <Route path="/controls" element={<Controls />} />
-                    <Route path="/consoles" element={<Consoles />} />
+                    <Route path="/accessories" element={<Accessories dataUser={currentClient}/>} />
+                    <Route path="/controls" element={<Controls dataUser={currentClient}/>} />
+                    <Route path="/consoles" element={<Consoles dataUser={currentClient}/>} />
+                    <Route path="/history" element={<History data={currentClient}/>} />
                     {/* <Route path="/car" element={<Car currentClient={currentClient}/>}/> */}
 
                 </Routes>

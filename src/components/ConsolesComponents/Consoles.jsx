@@ -4,7 +4,7 @@ import ItemConsole from "./ItemConsole"
 import DetailesConsole from "../ConsolesComponents/DetailesConsole"
 
 
-function Consoles() {
+function Consoles({dataUser}) {
 
     const [accion, setAccion] = useState("products")
     const [dataDatail, setDataDetail] = useState()
@@ -16,7 +16,7 @@ function Consoles() {
             {
                 accion === "products"
                     ? consoles ? consoles.map(console => <ItemConsole data={console} setAccion={setAccion} setDataDetail={setDataDetail} />) : null
-                    : <DetailesConsole setAccion={setAccion} dataDatail={dataDatail} />
+                    : <DetailesConsole setAccion={setAccion} dataDatail={dataDatail} dataUser={dataUser}/>
             }
         </div>
     )

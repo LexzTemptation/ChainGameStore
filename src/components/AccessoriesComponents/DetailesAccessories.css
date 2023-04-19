@@ -1,98 +1,155 @@
-.wrapper{
-    position: auto;
-    padding-top: 5rem;
-    background-color: rgb(160, 160, 160);
+.w{
+  position: auto;
+  background-color: rgb(160, 160, 160);
 }
 .containerProduct{
-    padding-top: 1rem;
-    padding-left: 3rem;
-    background-color: white;
-    margin: 1rem;
+  padding-top: 1rem;
+  padding-left: 3rem;
+  background-color: white;
+  margin: 1rem;
 }
 .h2{
-    color: black;
+  color: black;
+}
+.back{
+padding-left: 1rem;
+font-size: large;
+cursor: pointer;
 }
 .dataGame{
-    padding-left: 50px;
-    height: 50px;
-    width: 50px;
+  padding-left: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 .title{
-    border: 1px solid rgb(183, 183, 183);
-    border-radius: 10px;
-    padding: 1rem;
+  border: 1px solid rgb(183, 183, 183);
+  border-radius: 10px;
+  padding: 1rem;
 }
 .small{
-    border-bottom: 1px solid rgb(183, 183, 183);
+  border-bottom: 1px solid rgb(183, 183, 183);
 }
 .game{
-    font-size: 2rem;
+  font-size: 2rem;
 }
 .textDetails{
-    line-height: 2rem;
+  line-height: 2rem;
 }
 .video{
-    text-align: center;
+  text-align: center;
 }
 
 .carousel{
-    margin-left: 4.9rem;
-    padding-left: 5rem;
-    height: 20rem;
-    width: 30rem;
+  margin-left: 4.9rem;
+  padding-left: 5rem;
+  height: 20rem;
+  width: 30rem;
 }
 .carousel-image{
-    margin: auto;
-    display: block;
+  margin: auto;
+  display: block;
 }
 .carouselItem{
-    height: 500px;
+  height: 500px;
 }
 .carouselItem img{
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .details{
-    text-align: left;
-    color: black;
+  text-align: left;
+  color: black;
 }
 
 .justify-content-md-center{
-    padding-top: 8rem;
+  padding-top: 8rem;
 }
 @media (max-width: 576px) {
-    .carousel-item img {
-      height: 400px;
-    }
-    .carousel{
-        margin-left: 1rem;
-        padding-left: 5rem;
-        height: 20rem;
-        width: 30rem;
-    }
+  .carousel-item img {
+    height: 350px;
   }
-  
-  @media (min-width: 576px) and (max-width: 768px) {
-    .carousel-item img {
-      height: 300px;
-    }
+  .carousel{
+      margin-left: 5rem;
+      padding-left: 1rem;
+      height: 20rem;
+      width: 30rem;
   }
-  
-  @media (min-width: 768px) and (max-width: 992px) {
-    .carousel-item img {
-      height: 400px;
-    }
+  .title{
+    margin-top: 6rem;
+    margin-right: 3rem;
   }
-  
-  @media (min-width: 992px) and (max-width: 1200px) {
-    .carousel-item img {
-      height: 500px;
-    }
+  .descripcion{
+    margin-right: 3rem;
   }
-  
-  @media (min-width: 1200px) {
-    .carousel-item img {
-      height: 400px;
-    }
+  .rep{
+    width: 400px;
+    height: 300px;
   }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .carousel-item img {
+    height: 400px;
+  }
+  .title{
+    align-items:center;
+    margin-top: 20rem;
+    margin-right: 3rem;
+    width: auto;
+    height: auto;
+  }
+  .descripcion{
+    margin-right: 0rem;
+  }
+  .rep{
+    width: 500px;
+    height: 290px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .carousel-item img {
+    height: 400px;
+  }
+  .title{
+    align-items:center;
+    margin-top: 27rem;
+    margin-right: 0rem;
+    width: auto;
+  }
+  .descripcion{
+    margin-right: 0rem;
+  }
+  .rep{
+    width: 500px;
+    height: 290px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .carousel-item img {
+    height: 500px;
+  }
+  .title{
+    margin-top: 34rem;
+    margin-right: 0rem;
+    width: 30rem;
+  }
+  .descripcion{
+    margin-right: 0rem;
+  }
+  .rep{
+    width: 500px;
+    height: 290px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-item img {
+    height: 400px;
+  }
+  .descripcion{
+    margin-top: 0rem;
+  }
+}
