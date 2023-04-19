@@ -1,26 +1,46 @@
+import ItemCar from "./ItemCar"
+import useAddShopingCar from "../../Hooks/useAddShoppingCar"
+import { useState } from "react";
 
-/* import useAddShopingCar from "../../Hooks/useAddShopingCar" */
-
-function Car(/* {currentClient} */)
+function Car({currentClient})
 {
 
-    //Destructurar el id de currentclient
-    //utilizas tu hook pasandole el id para que te retorne todos los carritos del cliente actual
-    //ya que tienes los datos del carrito debes iterar, por cada iteracion llamas a tu componente itemCar
+    const [latitud, setLatitud] = useState()
+    const [longitud, setLongitud] = useState()
 
-    /* let {carritos} = useAddShopingCar(idcliete) */
+   let {idCliente} = currentClient
+   let {car} = useAddShopingCar(idCliente) 
 
-    /* return(
+
+    const options = {
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0,
+    };
+
+    function error(err) {
+        console.warn(`ERROR(${err.code}): ${err.message}`);
+    }
+
+    function success(pos) {
+        const crd = pos.coords;
+
+        setLatitud(crd.latitude)
+        setLongitud(crd.longitude)
+    }
+
+    navigator.geolocation.getCurrentPosition(success, error, options);
+  
+
+    return(
         <div>
-
-        {
-            carritos.map(car => <ItemCar data={car}/>)
-        
-        }
-
-            <p>Hey</p>
+            {
+                car 
+                    ? car.map(carr => <ItemCar data={carr} longitud={longitud} latitud={latitud} idCliente={idCliente}/>)  
+                : console.log("no") 
+            }
         </div>
-    ) */
+    )
 }
 
 export default Car
