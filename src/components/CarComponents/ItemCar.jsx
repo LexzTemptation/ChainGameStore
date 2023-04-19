@@ -80,31 +80,33 @@ function ItemCar({data, latitud, longitud, idCliente})
     }
 
     return(
-        <div style={{padding: "5px"}}>
-            <div class="col-md-4">
-                <div class="card mb-3" style={{ maxWidth: '540px' }}>
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src={foto} class="img-fluid rounded-start" alt="..." />
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h9 class="card-title">{titulo}</h9>
-                                <p class="card-text">{condicion}</p>
-                                <p class="card-text">{plataforma}</p>
-                                <p class="card-text">{garantia}</p>
-                                <p class="card-text"><small class="text-muted">${precio}</small></p>
-                                <InputGroup className="mb-3">
-                                    <InputGroup.Text >
-                                        Cantidad
-                                    </InputGroup.Text>
-                                    <Form.Control
-                                        id="cantidad"
-                                        aria-label="Default"
-                                        aria-describedby="inputGroup-sizing-default"
-                                    />
-                                </InputGroup>
-                                <Button onClick={handlerBuy}>Comprar ahora</Button>
+        <div class="iron">
+            <div class="row justify-content-center" /* style={{marginLeft: "5px", padding: "2px"}} */>
+                <div class="col-md-4">
+                    <div class="card mb-3" style={{ maxWidth: '540px' }}>
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src={foto} class="img-fluid rounded-start" alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h9 class="card-title">{titulo}</h9>
+                                    <p class="card-text">{condicion}</p>
+                                    <p class="card-text">{plataforma}</p>
+                                    <p class="card-text">{garantia}</p>
+                                    <p class="card-text"><small class="text-muted">${precio}</small></p>
+                                    <InputGroup className="mb-3">
+                                        <InputGroup.Text >
+                                            Cantidad
+                                        </InputGroup.Text>
+                                        <Form.Control
+                                            id="cantidad"
+                                            aria-label="Default"
+                                            aria-describedby="inputGroup-sizing-default"
+                                        />
+                                    </InputGroup>
+                                    <Button onClick={handlerBuy}>Comprar ahora</Button>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -34,10 +34,10 @@ export default function Login({setCurrentClient}) {
                 <br />
                 <div class="row justify-content-center">
                     <div class="col-8">
-                        <div style={{ fontSize: "1em", color: "whitesmoke" }}>
-                            <Link to={"/"}><FontAwesomeIcon icon={faArrowLeft} />{" Regresar"}</Link>
+                        <div >
+                            <Link to={"/"} style={{ fontSize: "1em", color: "whitesmoke", textDecoration: "none" }}><FontAwesomeIcon icon={faArrowLeft} />{" Regresar "}</Link>
                         </div>
-                    </div>
+                    </div> 
                 </div>
                 <div class="col-12">
                     <div class="row justify-content-center">
@@ -47,12 +47,12 @@ export default function Login({setCurrentClient}) {
                                 <br />
                                 <div class="row justify-content-center">
                                     <div class="col-3">
-                                        <h2>Iniciar sesion</h2>
+                                        <h2 style={{ margin: "2px" }}>Iniciar sesion</h2>
                                     </div>
                                 </div>
                                 <div class="row justify-content-center">
                                     <div class="col-4">
-                                        <img src="user-icn.png" width="245" height="245" alt="" />
+                                        <img style={{margin: "7px"}} src="user-icn.png" width="245" height="245" alt="" />
                                     </div>
                                 </div>
                                 <div>
